@@ -21,7 +21,9 @@ public class DisableGeo extends AndroidAction {
   @Override
   public com.testsigma.sdk.Result execute() throws NoSuchElementException {
     com.testsigma.sdk.Result result = null;
-    String command= "adb shell settings put secure location_mode 0";
+    AndroidDriver androidDriver = (AndroidDriver) this.driver;
+    String udid = androidDriver.getCapabilities().getCapability("udid").toString();
+    String command= "adb -s "+udid+" shell settings put secure location_mode 0";
     try {
       // Esegui il comando adb
       Process process = Runtime.getRuntime().exec(command);

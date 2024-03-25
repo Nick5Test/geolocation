@@ -25,7 +25,9 @@ public class EnableGeo extends AndroidAction {
   public com.testsigma.sdk.Result execute() throws NoSuchElementException {
     //Your Awesome code starts here
     com.testsigma.sdk.Result result = null;
-    String command= "adb shell settings put secure location_mode 3";
+    AndroidDriver androidDriver = (AndroidDriver) this.driver;
+    String udid = androidDriver.getCapabilities().getCapability("udid").toString();
+    String command= "adb -s "+udid+" shell settings put secure location_mode 3";
     try {
       // Esegui il comando adb
       Process process = Runtime.getRuntime().exec(command);

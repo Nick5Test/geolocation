@@ -44,7 +44,7 @@ public class TestAndroidAction {
     @Test
     public void Test() throws Exception {
         //DisableGeo action = new DisableGeo();
-        EnableGeo action = new EnableGeo();
+        DisableGeo action = new DisableGeo();
         runner.run(action);
     }
 
