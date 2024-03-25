@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.testsigma:testsigma-java-sdk:1.2.8_cloud">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/testsigma/testsigma-java-sdk/1.2.8_cloud/testsigma-java-sdk-1.2.8_cloud.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/testsigma/testsigma-java-sdk/1.2.8_cloud/testsigma-java-sdk-1.2.8_cloud-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/testsigma/testsigma-java-sdk/1.2.8_cloud/testsigma-java-sdk-1.2.8_cloud-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
